@@ -1,0 +1,19 @@
+# Variables de entorno (contienen credenciales)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[oc]
+.pytest_cache/
+build/
+dist/
+wheels/
+*.egg-info
+
+# Entornos virtuales
+.venv
+
+# Sistema
+.DS_Store

@@ -1,0 +1,21 @@
+[project]
+name = "order-service"
+version = "0.1.0"
+description = "Microservicio order-service del ecommerce"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi[standard]>=0.152.0",
+    "psycopg>=3.3.6",
+    "psycopg-binary>=3.3.6",
+    "sqlmodel>=0.0.48",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
